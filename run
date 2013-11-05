@@ -1,0 +1,2 @@
+# Mac/Linux wrapper (use: `chmod +x` to make this executable)
+ruby run.rb $*
