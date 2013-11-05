@@ -1,0 +1,67 @@
+Rubyish C++11
+
+
+
+C++ isn't much like Ruby
+  ...and never will be
+  ...but it's getting a little closer
+
+
+
+C++03
+  bug fix revision of C++98 (first ISO standard for C++)
+
+
+
+C++11 Standard approved in 2011
+  first major revision in 13 years!
+
+
+
+Implemented by major compilers
+  Apple LLVM 5.0
+  clang 3.3
+  gcc 4.8.1 (mostly)
+  Visual C++ 2013
+
+
+
+
+"Prefer index over iterator in Vector iterations for a terse, easier-to-read code"
+  Right:
+
+	size_t frameViewsCount = frameViews.size();
+	for (size_t i = 0; i < frameViewsCount; ++i)
+	  frameViews[i]->updateLayoutAndStyleIfNeededRecursive();
+
+  Wrong:
+
+	const Vector<RefPtr<FrameView> >::iterator end = frameViews.end();
+	for (Vector<RefPtr<FrameView> >::iterator it = frameViews.begin(); it != end; ++it)
+	  (*it)->updateLayoutAndStyleIfNeededRecursive();
+
+  http://dev.chromium.org/blink/coding-style#TOC-Other-Punctuation
+
+
+
+Ventor example in idiomatic C++03
+
+
+WebKit example in idiomatic C++11:
+
+  for (auto& view : frameViews) {
+    view.updateLayoutAndStyleIfNeededRecursive();
+  }
+
+
+
+Other Rubish features
+  optional garbage collection
+  lambdas
+
+
+
+Coming soon?
+  modules
+  optionals (Boost)
+  file system library? (Boost)
