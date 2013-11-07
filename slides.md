@@ -403,7 +403,7 @@ for (auto& view : frameViews) {
 
 
 
-## Other Rubish features
+## Other Rubyish features
 optional garbage collection
 
 lambdas
@@ -419,7 +419,7 @@ file system library
 
 
 
-## Resoureces & Books
+## Resources & Books
 <img width="300" src="img/tour.jpg">
 <img width="300" src="img/ppp.jpg">
 <img width="300" src="img/cpl4.jpg">
