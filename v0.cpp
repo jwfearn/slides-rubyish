@@ -7,8 +7,7 @@ int main() {
   std::vector<int>::const_iterator end = v.end();
   std::vector<int>::const_iterator iter = v.begin();
   for (; iter != end; ++iter) {
-  	// *iter = 0;
-    std::cout << " " << *iter;
+    std::cout << *iter << " ";
   }
   std::cout << std::endl;
   return 0;
